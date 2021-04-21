@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/cvw_item">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="135dp"
+            android:id="@+id/cvw_img_cafe"
+            android:padding="4dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cvw_nama"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/cvw_img_cafe"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="Nama Kafe"
+            android:fontFamily="@font/psemibold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cvw_lokasi"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/cvw_img_cafe"
+            android:layout_below="@id/cvw_nama"
+            android:textSize="11sp"
+            android:textColor="@color/orange_smooth"
+            android:text="lokasi"
+            android:fontFamily="@font/pregular"
+            tools:ignore="SmallSp"
+            android:drawablePadding="7dp"
+            app:drawableStartCompat="@drawable/ic_location_text" />
+
+        <TextView
+            android:id="@+id/cvw_range_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvw_lokasi"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/cvw_img_cafe"
+            android:fontFamily="@font/pregular"
+            android:text="10000 - 300000"
+            android:textSize="12sp"
+            android:drawablePadding="7dp"
+            app:drawableStartCompat="@drawable/ic_money_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cvw_jam_buka"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/cvw_img_cafe"
+            android:layout_below="@id/cvw_range_harga"
+            android:textSize="12sp"
+            android:drawablePadding="7dp"
+            android:text="20.20 - 10.10"
+            android:fontFamily="@font/pregular"
+            app:drawableStartCompat="@drawable/ic_time_text" />
+
+        <View
+            android:id="@+id/cvw_shadow"
+            android:layout_toEndOf="@id/cvw_img_cafe"
+            android:layout_below="@id/cvw_jam_buka"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shadow"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cvw_status"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/cvw_img_cafe"
+            android:layout_below="@id/cvw_shadow"
+            android:textSize="17sp"
+            android:drawablePadding="7dp"
+            android:text="Buka"
+            android:textAlignment="center"
+            android:fontFamily="@font/psemibold"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

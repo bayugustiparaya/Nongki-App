@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Nongki</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_cafe">Cafe</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_menu">Menu</string>
+</resources>
