@@ -47,14 +47,11 @@ public class CafeAdapter extends RecyclerView.Adapter<CafeAdapter.CafeViewHolder
                 .into(holder.imgCafe);
         holder.txtNama.setText(model.getNamaCafe());
         holder.txtLokasi.setText(model.getLokasi());
-        holder.txtRangeHarga.setText("± "+currentcy.format(Integer.parseInt(model.getRangeHarga())));
+        holder.txtRangeHarga.setText("± "+currentcy.format(Integer.parseInt(model.getRangeHarga())).toString());
         holder.txtJamBuka.setText(model.getJamBuka());
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(context, Detail.class);
-//                intent.putExtra("namafood", food.getNama());
-//                context.startActivity(intent);
                 Toast.makeText(context.getContext(), model.getNamaCafe(), Toast.LENGTH_LONG).show();
             }
         });
